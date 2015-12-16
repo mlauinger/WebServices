@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="AzureCalc" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="Frontend">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=myawesomecalc;AccountKey=6p+7U8z+kIj5UjnUCIYe9BThX7tVxGiaRFRAblaZY8eys0ODM5Oj9MFv7LxgexBMLXrLd8ZE0zODPnTfADpu6g==" />
+      <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=https;AccountName=myawesomecalc;AccountKey=6p+7U8z+kIj5UjnUCIYe9BThX7tVxGiaRFRAblaZY8eys0ODM5Oj9MFv7LxgexBMLXrLd8ZE0zODPnTfADpu6g==" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="Worker">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=myawesomecalc;AccountKey=6p+7U8z+kIj5UjnUCIYe9BThX7tVxGiaRFRAblaZY8eys0ODM5Oj9MFv7LxgexBMLXrLd8ZE0zODPnTfADpu6g==" />
+      <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=https;AccountName=myawesomecalc;AccountKey=6p+7U8z+kIj5UjnUCIYe9BThX7tVxGiaRFRAblaZY8eys0ODM5Oj9MFv7LxgexBMLXrLd8ZE0zODPnTfADpu6g==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
